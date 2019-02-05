@@ -27,8 +27,7 @@ module.exports = {
       'jsdoc'
     ],
     rules: {
-      "no-useless-escape": 0,
-      "node/no-deprecated-api": 0
+      "node/no-deprecated-api": 1
     }
   }
   
