@@ -26,6 +26,8 @@ module.exports = {
       'react',
       'jsdoc'
     ],
-    rules: {}
+    rules: {
+      "node/no-deprecated-api": 1
+    }
   }
   
