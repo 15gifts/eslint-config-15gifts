@@ -31,5 +31,8 @@
   },
   "peerDependencies": {
     "eslint": ">= 3"
+  },
+  "devDependencies": {
+    "eslint-config-esnext": "^4.0.0"
   }
 }

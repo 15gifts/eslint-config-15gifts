@@ -1,10 +1,14 @@
 module.exports = {
     extends: [
       'eslint:recommended',
+      'esnext',
       'plugin:react/recommended',
       'standard'
     ],
     parser: 'babel-eslint',
+    parserOptions: {
+      ecmaVersion: 10
+    }
     env: {
       es6: true,
       browser: true,
@@ -18,7 +22,7 @@ module.exports = {
         },
         'import/resolver': {
             node: {
-            paths: ['./src']
+              paths: ['./src']
             }
         }
     },
@@ -27,7 +31,7 @@ module.exports = {
       'jsdoc'
     ],
     rules: {
-      "node/no-deprecated-api": 1
+      'node/no-deprecated-api': 1,
     }
   }
   
