@@ -8,7 +8,7 @@ module.exports = {
     parser: 'babel-eslint',
     parserOptions: {
       ecmaVersion: 10
-    }
+    },
     env: {
       es6: true,
       browser: true,
