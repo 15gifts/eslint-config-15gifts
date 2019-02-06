@@ -1,7 +1,6 @@
 module.exports = {
     extends: [
       'eslint:recommended',
-      'esnext',
       'plugin:react/recommended',
       'standard'
     ],
