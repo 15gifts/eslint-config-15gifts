@@ -2,6 +2,7 @@ module.exports = {
     extends: [
       'eslint:recommended',
       'plugin:react/recommended',
+      'plugin:import/recommended',
       'standard'
     ],
     parser: 'babel-eslint',
