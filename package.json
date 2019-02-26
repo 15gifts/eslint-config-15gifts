@@ -31,5 +31,8 @@
   },
   "peerDependencies": {
     "eslint": ">= 3"
+  },
+  "devDependencies": {
+    "eslint-plugin-jsx-a11y": "^6.2.1"
   }
 }

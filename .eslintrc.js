@@ -27,7 +27,8 @@ module.exports = {
     },
     plugins: [
       'react',
-      'jsdoc'
+      'jsdoc',
+      'jsx-a11y'
     ],
     rules: {
       'node/no-deprecated-api': 1,
