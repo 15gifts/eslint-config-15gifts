@@ -31,6 +31,7 @@ module.exports = {
     ],
     rules: {
       'node/no-deprecated-api': 1,
+      'curly': [2, 'multi', 'consistent'],
     }
   }
-  
+
