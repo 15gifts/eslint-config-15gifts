@@ -28,11 +28,12 @@ module.exports = {
     },
     plugins: [
       'react',
+      'react-hooks',
       'jsdoc'
     ],
     rules: {
       'node/no-deprecated-api': 1,
       'curly': [2, 'multi', 'consistent'],
+      'react-hooks/rules-of-hooks': 'error'
     }
   }
-
