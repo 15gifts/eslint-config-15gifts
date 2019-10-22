@@ -36,6 +36,7 @@ module.exports = {
     'node/no-deprecated-api': 1,
     'curly': [2, 'multi-line', 'consistent'],
     'react-hooks/rules-of-hooks': 'error',
-    'no-unused-vars': [2, { 'ignoreRestSiblings': false }]
+    'no-unused-vars': [2, { 'ignoreRestSiblings': false }],
+    'brace-style': ['error', 'stroustrup'],
   }
 }
