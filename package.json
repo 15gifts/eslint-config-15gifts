@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-15gifts",
+  "name": "@15gifts/eslint-config",
   "version": "1.0.0",
   "description": "15gifts ESLint Shareable Config",
   "main": "index.js",
