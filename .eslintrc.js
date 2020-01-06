@@ -30,14 +30,16 @@ module.exports = {
     'react',
     'react-hooks',
     'jsdoc',
-    'jsx-a11y'
+    'jsx-a11y',
+    'sort-destructure-keys'
   ],
   rules: {
-    'node/no-deprecated-api': 1,
+    'brace-style': ['error', 'stroustrup'],
     'comma-dangle' : [2, 'always-multiline'],
     'curly': [2, 'multi-line', 'consistent'],
-    'react-hooks/rules-of-hooks': 'error',
     'no-unused-vars': [2, { 'ignoreRestSiblings': false }],
-    'brace-style': ['error', 'stroustrup'],
+    'node/no-deprecated-api': 1,
+    'react-hooks/rules-of-hooks': 'error',
+    'sort-destructure-keys/sort-destructure-keys': 2
   }
 }
