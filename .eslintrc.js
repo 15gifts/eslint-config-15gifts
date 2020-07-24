@@ -1,9 +1,6 @@
 module.exports = {
   extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:import/recommended',
-    'standard'
+    'airbnb-standard'
   ],
   parser: 'babel-eslint',
   parserOptions: {
@@ -17,21 +14,16 @@ module.exports = {
     jest: true
   },
   settings: {
-      react: {
-          version: '16.0'
-      },
-      'import/resolver': {
-          node: {
-            paths: ['./src']
-          }
+    'import/resolver': {
+      node: {
+        paths: ['./src']
       }
+    }
   },
   plugins: [
-    'react',
-    'react-hooks',
     'jsdoc',
-    'jsx-a11y',
-    'sort-destructure-keys'
+    'sort-destructure-keys',
+    'node'
   ],
   rules: {
     'brace-style': ['error', 'stroustrup'],
@@ -39,7 +31,6 @@ module.exports = {
     'curly': [2, 'multi-line', 'consistent'],
     'no-unused-vars': [2, { 'ignoreRestSiblings': false }],
     'node/no-deprecated-api': 1,
-    'react-hooks/rules-of-hooks': 'error',
     'sort-destructure-keys/sort-destructure-keys': 2
   }
 }
