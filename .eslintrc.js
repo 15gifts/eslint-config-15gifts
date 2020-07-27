@@ -2,6 +2,11 @@ module.exports = {
   extends: [
     'airbnb-standard'
   ],
+  plugins: [
+    'jsdoc',
+    'sort-destructure-keys',
+    'node'
+  ],
   parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 10
@@ -16,15 +21,12 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        paths: ['./src']
-      }
-    }
+        paths: [ 'src' ],
+        extensions: [ '.js', '.jsx' ]
+      },
+      'babel-module': {}
+    },
   },
-  plugins: [
-    'jsdoc',
-    'sort-destructure-keys',
-    'node'
-  ],
   rules: {
     'brace-style': ['error', 'stroustrup'],
     'comma-dangle' : [2, 'always-multiline'],
