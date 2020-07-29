@@ -33,6 +33,7 @@ module.exports = {
     'curly': [2, 'multi-line', 'consistent'],
     'no-unused-vars': [2, { 'ignoreRestSiblings': false }],
     'node/no-deprecated-api': 1,
+    'semi': ['error', 'never'],
     'sort-destructure-keys/sort-destructure-keys': 2
   }
 }
