@@ -1,9 +1,11 @@
 module.exports = {
   extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:import/recommended',
-    'standard'
+    'airbnb-standard'
+  ],
+  plugins: [
+    'jsdoc',
+    'sort-destructure-keys',
+    'node'
   ],
   parser: 'babel-eslint',
   parserOptions: {
@@ -17,29 +19,21 @@ module.exports = {
     jest: true
   },
   settings: {
-      react: {
-          version: '16.0'
+    'import/resolver': {
+      node: {
+        paths: [ 'src' ],
+        extensions: [ '.js', '.jsx' ]
       },
-      'import/resolver': {
-          node: {
-            paths: ['./src']
-          }
-      }
+      'babel-module': {}
+    },
   },
-  plugins: [
-    'react',
-    'react-hooks',
-    'jsdoc',
-    'jsx-a11y',
-    'sort-destructure-keys'
-  ],
   rules: {
     'brace-style': ['error', 'stroustrup'],
     'comma-dangle' : [2, 'always-multiline'],
     'curly': [2, 'multi-line', 'consistent'],
     'no-unused-vars': [2, { 'ignoreRestSiblings': false }],
     'node/no-deprecated-api': 1,
-    'react-hooks/rules-of-hooks': 'error',
+    'semi': ['error', 'never'],
     'sort-destructure-keys/sort-destructure-keys': 2
   }
 }
