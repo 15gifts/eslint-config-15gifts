@@ -4,7 +4,8 @@
   "description": "15gifts ESLint Shareable Config",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/eslint ."
+    "test": "./node_modules/.bin/eslint .",
+    "fix": "./node_modules/.bin/eslint . --fix"
   },
   "repository": {
     "type": "git",
