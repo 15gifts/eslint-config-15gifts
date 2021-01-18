@@ -35,5 +35,6 @@ module.exports = {
     'node/no-deprecated-api': 1,
     semi: ['error', 'never'],
     'sort-destructure-keys/sort-destructure-keys': 2,
+    'sort-keys-fix/sort-keys-fix': ['error', 'asc', { natural: true }],
   },
 }
