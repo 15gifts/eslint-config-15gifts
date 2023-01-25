@@ -1,6 +1,6 @@
 {
   "name": "@15gifts/eslint-config",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "15gifts ESLint Shareable Config",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/15gifts/eslint-config-15gifts#readme",
   "dependencies": {
-    "babel-eslint": "^10.0.1",
+    "@babel/eslint-parser": "^7.19.1",
     "eslint": "^7.18.0",
     "eslint-config-airbnb-standard": "^3.1.0",
     "eslint-config-standard": "^16.0.2",
