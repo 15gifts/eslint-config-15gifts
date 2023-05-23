@@ -23,5 +23,6 @@ module.exports = {
         tsx: "never",
       },
     ],
+    "dot-notation": "off",
   },
 };

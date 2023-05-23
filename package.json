@@ -4,7 +4,9 @@
   "description": "15gifts ESLint Shareable Config",
   "main": "index.js",
   "scripts": {
-    "test": "eslint ./test/",
+    "lint": "eslint ./test",
+    "lint:config": "eslint ./test --output-file ./test/eslint-results.json --format json",
+    "test": "jest",
     "fix": "npm run test -- --fix"
   },
   "repository": {
@@ -18,13 +20,8 @@
     "url": "https://github.com/15gifts/eslint-config-15gifts/issues"
   },
   "homepage": "https://github.com/15gifts/eslint-config-15gifts#readme",
-  "dependencies": {
-    "eslint-plugin-import": ">= 2.16.0",
-    "eslint-plugin-jsdoc": ">= 4.1.0",
-    "eslint": ">= 8"
-  },
   "peerDependencies": {
-    "eslint": ">= 8",
+    "eslint": "^7.2.0",
     "eslint-plugin-import": ">= 2.16.0",
     "eslint-plugin-jsdoc": ">= 4.1.0",
     "eslint-plugin-react": ">= 7.12.4",
@@ -35,17 +32,24 @@
   },
   "devDependencies": {
     "@emotion/eslint-plugin": "^11.11.0",
+    "@types/jest": "^29.5.1",
+    "@types/node": "^18.16.7",
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.4",
     "@typescript-eslint/parser": "^5.59.6",
-    "eslint": "^8.41.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-typescript": "^16.0.0",
     "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": ">= 2.16.0",
+    "eslint-plugin-jsdoc": ">= 4.1.0",
     "eslint-plugin-node": "^7.0.0",
     "eslint-plugin-sort-destructure-keys": "^1.5.0",
     "eslint-plugin-sort-keys-fix": "^1.1.2",
     "eslint-plugin-storybook": "^0.6.12",
+    "jest": "^29.5.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "ts-node": "^10.9.1"
   }
 }
