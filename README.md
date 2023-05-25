@@ -49,8 +49,16 @@ Documentation on creating shareable eslint configs can be found here https://esl
 
 ## Publishing a version
 
+`npm version 3.1.0-beta.0`
+
 - create the git tag
 - update package.json version
+
+To use this new version in another repo it should be added as a dependency like so:
+`"@15gifts/eslint-config": "git+ssh://git@github.com/15gifts/eslint-config-15gifts.git#v2.1.0",`
+The bit after the hash can be a git tag, or a branch name
+
+> NOTE: This project is not published to the NPM registry
 
 ## Prettier and code formatting
 
@@ -61,6 +69,7 @@ This config does include `eslint-config-prettier` which disables rules in eslint
 
 ## v3.0.0
 
+- Adds support for Node 18
 - Updates dependencies (first time in 2 years)
 - Splits in to 2 config files, default and React. So that we can use this config outside of React projects.
 - Adds some basic tests, that can be run manually when developing
