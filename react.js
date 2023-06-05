@@ -4,9 +4,9 @@ module.exports = {
   extends: [
     "airbnb",
     "airbnb-typescript",
+    "airbnb/hooks",
     "plugin:storybook/recommended",
-    // "@15gifts/eslint-config/another",
-    // "airbnb/hooks",
+    "prettier",
   ],
   plugins: [...shared.plugins, "@emotion"],
   rules: {
