@@ -3,11 +3,11 @@ const shared = require("./shared.js");
 module.exports = {
   env: {
     browser: true,
-    es2021: true,
     jest: true,
     node: true,
+    "jest/globals": true,
   },
-  extends: ["airbnb-base", "airbnb-typescript/base", "prettier"],
+  extends: ["airbnb-base", "plugin:@typescript-eslint/recommended", "prettier"],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: "latest",

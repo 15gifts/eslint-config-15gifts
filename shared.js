@@ -1,10 +1,23 @@
 module.exports = {
-  plugins: ["jsdoc", "sort-keys-fix", "sort-destructure-keys", "node"],
+  plugins: [
+    "jest",
+    "jsdoc",
+    "sort-keys-fix",
+    "sort-destructure-keys",
+    "node",
+    "@typescript-eslint",
+  ],
   rules: {
     "brace-style": ["error", "stroustrup"],
     "comma-dangle": ["error", "always-multiline"],
     curly: ["error", "multi-line", "consistent"],
-    "no-unused-vars": ["error", { ignoreRestSiblings: false }],
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      { argsIgnorePattern: "^_", ignoreRestSiblings: false },
+    ],
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"],
     "node/no-deprecated-api": "warn",
     semi: "off",
     "@typescript-eslint/semi": ["error", "never"],
@@ -21,6 +34,7 @@ module.exports = {
         jsx: "never",
         ts: "never",
         tsx: "never",
+        mjs: "never",
       },
     ],
     "dot-notation": "off",
