@@ -1,5 +1,9 @@
 const shared = require("./shared.js");
 
+/*
+ * This config can be used by extending '@15gifts/eslint-config/react'
+ * For non-React projects, see './index.js'
+ */
 module.exports = {
   env: {
     browser: true,

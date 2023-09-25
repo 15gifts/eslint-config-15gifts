@@ -1,3 +1,6 @@
+/*
+ * This config is shared between the default and react configs
+ */
 module.exports = {
   plugins: [
     "jest",
