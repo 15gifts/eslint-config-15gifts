@@ -51,6 +51,8 @@ Documentation on creating shareable eslint configs can be found here https://esl
 
 `npm version 3.1.0-beta.0`
 
+This will:
+
 - create the git tag
 - update package.json version
 
