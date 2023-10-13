@@ -11,13 +11,12 @@ module.exports = {
     "@typescript-eslint",
   ],
   rules: {
-    "brace-style": ["error", "stroustrup"],
     "comma-dangle": ["error", "always-multiline"],
     curly: ["error", "multi-line", "consistent"],
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": [
       "error",
-      { argsIgnorePattern: "^_", ignoreRestSiblings: false },
+      { ignoreRestSiblings: false },
     ],
     "no-shadow": "off",
     "@typescript-eslint/no-shadow": ["error"],
@@ -28,7 +27,6 @@ module.exports = {
     "sort-keys-fix/sort-keys-fix": ["error", "asc", { natural: true }],
     "import/prefer-default-export": "off",
     "prefer-destructuring": "off",
-    "import/no-cycle": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
