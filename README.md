@@ -6,7 +6,12 @@ If you disagree with any of the rules or want to make a change, feel free to bri
 
 ## Usage
 
-This project is not published on NPM but you can link straight to the github repo. Note that the version number is liste at the end. This correlates to the tag on a given commit (See https://github.com/15gifts/eslint-config-15gifts/tags).
+This project is not published on NPM but you can link straight to the github repo. Note that the version number is listed at the end. This correlates to the tag on a given commit (See https://github.com/15gifts/eslint-config-15gifts/tags).
+
+> **Note**
+> This project was [previously published to NPM](https://www.npmjs.com/package/@15gifts/eslint-config)
+>
+> [Some projects](https://github.com/search?q=org%3A15gifts+%22%5C%22%4015gifts%2Feslint-config%5C%22%3A+%5C%22%5E%22&type=code) still use those old versions
 
 ```
 // package.json
