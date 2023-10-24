@@ -13,20 +13,18 @@ module.exports = {
   rules: {
     "comma-dangle": ["error", "always-multiline"],
     curly: ["error", "multi-line", "consistent"],
-    "no-unused-vars": "off",
+    "no-unused-vars": "off", // replaced by @typescript-eslint/no-unused-vars
     "@typescript-eslint/no-unused-vars": [
       "error",
-      { ignoreRestSiblings: false },
+      { ignoreRestSiblings: false, argsIgnorePattern: "^_" },
     ],
-    "no-shadow": "off",
+    "no-shadow": "off", // replaced by @typescript-eslint/no-shadow
     "@typescript-eslint/no-shadow": ["error"],
     "node/no-deprecated-api": "warn",
     semi: "off",
     "@typescript-eslint/semi": ["error", "never"],
     "sort-destructure-keys/sort-destructure-keys": "error",
     "sort-keys-fix/sort-keys-fix": ["error", "asc", { natural: true }],
-    "import/prefer-default-export": "off",
-    "prefer-destructuring": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
