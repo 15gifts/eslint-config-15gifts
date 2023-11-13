@@ -1,4 +1,4 @@
-import React, { type ReactNode } from "react";
+import React, { useCallback, type ReactNode, useState } from "react";
 
 interface ButtonProps {
   children: ReactNode;
@@ -16,6 +16,7 @@ export default function Button({
   loading = false,
   onClick,
   variant = "primary",
+  ...rest
 }: ButtonProps) {
   const linkProps = {};
   if (href) {
@@ -25,16 +26,32 @@ export default function Button({
     };
   }
 
+  console.log(rest);
+
   const variantMap = {
     secondary: "yellow",
     primary: "red",
   };
 
   const styles = {
+    ...variantMap,
     backgroundColor:   variantMap[variant], // prettier-ignore
   };
 
-  /* eslint-disable react/button-has-type */
+  let a = !linkProps === 2;
+
+  const loading = loading || false;
+
+  const shouldRender = useCallback(() => {
+    return !loading;
+  }, []);
+
+  if (!shouldRender()) {
+    return null;
+  }
+
+  const [foo, setFoo] = useState(3);
+
   return (
     <button
       type={type}
@@ -42,6 +59,7 @@ export default function Button({
       {...linkProps}
       style={styles}
       loading={loading}
+      foo={foo}
     >
       {children}
     </button>

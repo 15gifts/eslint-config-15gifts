@@ -18,22 +18,26 @@ test("That the base 'valid' file passes", async () => {
   const [result] = await getResultJson(["test/base/valid.js"]);
 
   expect(result.errorCount).toBe(0);
+  expect(result).toMatchSnapshot();
 });
 
 test("That the base 'invalid' file throws lint errors", async () => {
   const [result] = await getResultJson(["test/base/invalid.js"]);
 
   expect(result.errorCount).toBe(13);
+  expect(result).toMatchSnapshot();
 });
 
 test("That the React 'valid' file passes", async () => {
   const [result] = await getResultJson(["test/react/valid.tsx"]);
 
   expect(result.errorCount).toBe(0);
+  expect(result).toMatchSnapshot();
 });
 
-test("That the react 'invalid' file throws lint errors", async () => {
+test("That the React 'invalid' file throws lint errors", async () => {
   const [result] = await getResultJson(["test/react/invalid.tsx"]);
 
-  expect(result.errorCount).toBe(20);
+  expect(result.errorCount).toBe(23);
+  expect(result).toMatchSnapshot();
 });

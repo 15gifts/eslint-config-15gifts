@@ -37,5 +37,6 @@ module.exports = {
       },
     ],
     "dot-notation": "off",
+    // "no-constant-binary-expression": "error",
   },
 };
