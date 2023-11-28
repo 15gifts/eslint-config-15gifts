@@ -24,7 +24,7 @@ test("That the base 'valid' file passes", async () => {
 test("That the base 'invalid' file throws lint errors", async () => {
   const [result] = await getResultJson(["test/base/invalid.js"]);
 
-  expect(result.errorCount).toBe(13);
+  expect(result.errorCount).toBe(16);
   expect(result).toMatchSnapshot();
 });
 

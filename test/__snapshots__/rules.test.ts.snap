@@ -664,10 +664,10 @@ export default function Button({
 
 exports[`That the base 'invalid' file throws lint errors 1`] = `
 {
-  "errorCount": 13,
+  "errorCount": 16,
   "fatalErrorCount": 0,
   "filePath": "/Users/mattgreenfield/Desktop/eslint-config-15gifts/test/base/invalid.js",
-  "fixableErrorCount": 12,
+  "fixableErrorCount": 14,
   "fixableWarningCount": 0,
   "messages": [
     {
@@ -828,18 +828,78 @@ const",
       "severity": 2,
     },
     {
+      "column": 23,
+      "endColumn": 24,
+      "endLine": 17,
+      "fix": {
+        "range": [
+          401,
+          413,
+        ],
+        "text": ""tennis"
+if",
+      },
+      "line": 17,
+      "message": "Extra semicolon.",
+      "messageId": "extraSemi",
+      "nodeType": "VariableDeclaration",
+      "ruleId": "@typescript-eslint/semi",
+      "severity": 2,
+    },
+    {
       "column": 5,
-      "endColumn": 10,
+      "endColumn": 20,
+      "endLine": 18,
+      "line": 18,
+      "message": "Comparing to itself is potentially pointless.",
+      "messageId": "comparingToSelf",
+      "nodeType": "BinaryExpression",
+      "ruleId": "no-self-compare",
+      "severity": 2,
+    },
+    {
+      "column": 3,
+      "endColumn": 14,
+      "endLine": 19,
+      "line": 19,
+      "message": "Unexpected console statement.",
+      "messageId": "unexpected",
+      "nodeType": "MemberExpression",
+      "ruleId": "no-console",
+      "severity": 1,
+    },
+    {
+      "column": 24,
+      "endColumn": 25,
       "endLine": 19,
       "fix": {
         "range": [
-          432,
-          467,
+          456,
+          460,
+        ],
+        "text": ")
+}",
+      },
+      "line": 19,
+      "message": "Extra semicolon.",
+      "messageId": "extraSemi",
+      "nodeType": "ExpressionStatement",
+      "ruleId": "@typescript-eslint/semi",
+      "severity": 2,
+    },
+    {
+      "column": 5,
+      "endColumn": 10,
+      "endLine": 24,
+      "fix": {
+        "range": [
+          507,
+          542,
         ],
         "text": "color: "blonde",
     length: "long"",
       },
-      "line": 19,
+      "line": 24,
       "message": "Expected object keys to be in natural ascending order. 'color' should be before 'length'.",
       "nodeType": "Property",
       "ruleId": "sort-keys-fix/sort-keys-fix",
@@ -848,15 +908,15 @@ const",
     {
       "column": 20,
       "endColumn": 21,
-      "endLine": 19,
+      "endLine": 24,
       "fix": {
         "range": [
-          459,
-          470,
+          534,
+          545,
         ],
         "text": ""blonde" }",
       },
-      "line": 19,
+      "line": 24,
       "message": "Unexpected trailing comma.",
       "messageId": "unexpected",
       "nodeType": "Property",
@@ -866,18 +926,18 @@ const",
     {
       "column": 3,
       "endColumn": 6,
-      "endLine": 20,
+      "endLine": 25,
       "fix": {
         "range": [
-          424,
           499,
+          574,
         ],
         "text": "// prettier-ignore
 age: 4, 
   hair: { length: "long",
     color: "blonde", }",
       },
-      "line": 20,
+      "line": 25,
       "message": "Expected object keys to be in natural ascending order. 'age' should be before 'hair'.",
       "nodeType": "Property",
       "ruleId": "sort-keys-fix/sort-keys-fix",
@@ -886,17 +946,17 @@ age: 4,
     {
       "column": 3,
       "endColumn": 4,
-      "endLine": 21,
+      "endLine": 26,
       "fix": {
         "range": [
-          502,
-          512,
+          577,
+          587,
         ],
         "text": ")
 
 export",
       },
-      "line": 21,
+      "line": 26,
       "message": "Extra semicolon.",
       "messageId": "extraSemi",
       "nodeType": "VariableDeclaration",
@@ -906,15 +966,15 @@ export",
     {
       "column": 23,
       "endColumn": 24,
-      "endLine": 23,
+      "endLine": 28,
       "fix": {
         "range": [
-          527,
-          529,
+          602,
+          604,
         ],
         "text": "]",
       },
-      "line": 23,
+      "line": 28,
       "message": "Extra semicolon.",
       "messageId": "extraSemi",
       "nodeType": "ExportDefaultDeclaration",
@@ -937,6 +997,11 @@ export",
     name,
   };
 };
+
+const sport = "tennis";
+if (sport === sport) {
+  console.log("tennis");
+}
 
 const barry = getPerson("barry", {
   hair: { length: "long",
@@ -975,7 +1040,7 @@ export default [barry];
       "ruleId": "no-return-await",
     },
   ],
-  "warningCount": 0,
+  "warningCount": 1,
 }
 `;
 

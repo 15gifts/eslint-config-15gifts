@@ -13,6 +13,7 @@ module.exports = {
   rules: {
     "comma-dangle": ["error", "always-multiline"],
     curly: ["error", "multi-line", "consistent"],
+    "no-self-compare": "error",
     "no-unused-vars": "off", // replaced by @typescript-eslint/no-unused-vars
     "@typescript-eslint/no-unused-vars": [
       "error",
@@ -37,6 +38,6 @@ module.exports = {
       },
     ],
     "dot-notation": "off",
-    // "no-constant-binary-expression": "error",
+    "no-constant-binary-expression": "error",
   },
 };

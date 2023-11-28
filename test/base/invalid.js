@@ -14,6 +14,11 @@ const getPerson = (name, defaults) => {
   };
 };
 
+const sport = "tennis";
+if (sport === sport) {
+  console.log("tennis");
+}
+
 const barry = getPerson("barry", {
   hair: { length: "long",
     color: "blonde", }, // prettier-ignore
