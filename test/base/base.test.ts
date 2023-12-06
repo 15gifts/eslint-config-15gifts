@@ -6,6 +6,7 @@ describe("Base config", () => {
 
     expect(result.messages).toMatchSnapshot();
     expect(result.errorCount).toBe(0);
+    expect(result.warningCount).toBe(0);
   });
 
   test("That the base 'invalid' file throws lint errors", async () => {
@@ -13,5 +14,6 @@ describe("Base config", () => {
 
     expect(result.messages).toMatchSnapshot();
     expect(result.errorCount).toBe(13);
+    expect(result.warningCount).toBe(0);
   });
 });
