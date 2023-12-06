@@ -1,0 +1,192 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`React config That the React 'valid' file passes 1`] = `
+[
+  {
+    "column": 7,
+    "endColumn": 21,
+    "endLine": 42,
+    "line": 42,
+    "message": "Prop spreading is forbidden",
+    "messageId": "noSpreading",
+    "nodeType": "JSXSpreadAttribute",
+    "ruleId": "react/jsx-props-no-spreading",
+    "severity": 1,
+  },
+]
+`;
+
+exports[`React config That the react 'invalid' file throws lint errors 1`] = `
+[
+  {
+    "column": 46,
+    "endColumn": 47,
+    "endLine": 1,
+    "fix": {
+      "range": [
+        38,
+        57,
+      ],
+      "text": ""react"
+
+interface",
+    },
+    "line": 1,
+    "message": "Extra semicolon.",
+    "messageId": "extraSemi",
+    "nodeType": "ImportDeclaration",
+    "ruleId": "@typescript-eslint/semi",
+    "severity": 2,
+  },
+  {
+    "column": 3,
+    "endColumn": 18,
+    "endLine": 16,
+    "fix": {
+      "range": [
+        272,
+        360,
+      ],
+      "text": "children,
+  href,
+  loading = false,
+  onClick,
+  type = "button",
+  variant = "primary"",
+    },
+    "line": 16,
+    "message": "Expected object keys to be in sorted order. Expected loading to be before type.",
+    "messageId": "sort",
+    "nodeType": "Property",
+    "ruleId": "sort-destructure-keys/sort-destructure-keys",
+    "severity": 2,
+  },
+  {
+    "column": 23,
+    "endColumn": 24,
+    "endLine": 20,
+    "fix": {
+      "range": [
+        401,
+        408,
+      ],
+      "text": "}
+  if",
+    },
+    "line": 20,
+    "message": "Extra semicolon.",
+    "messageId": "extraSemi",
+    "nodeType": "VariableDeclaration",
+    "ruleId": "@typescript-eslint/semi",
+    "severity": 2,
+  },
+  {
+    "column": 6,
+    "endColumn": 7,
+    "endLine": 25,
+    "fix": {
+      "range": [
+        474,
+        480,
+      ],
+      "text": "}
+  }",
+    },
+    "line": 25,
+    "message": "Extra semicolon.",
+    "messageId": "extraSemi",
+    "nodeType": "ExpressionStatement",
+    "ruleId": "@typescript-eslint/semi",
+    "severity": 2,
+  },
+  {
+    "column": 5,
+    "endColumn": 12,
+    "endLine": 30,
+    "fix": {
+      "range": [
+        509,
+        548,
+      ],
+      "text": "primary: "red",
+    secondary: "yellow"",
+    },
+    "line": 30,
+    "message": "Expected object keys to be in natural ascending order. 'primary' should be before 'secondary'.",
+    "nodeType": "Property",
+    "ruleId": "sort-keys-fix/sort-keys-fix",
+    "severity": 2,
+  },
+  {
+    "column": 4,
+    "endColumn": 5,
+    "endLine": 31,
+    "fix": {
+      "range": [
+        552,
+        563,
+      ],
+      "text": "}
+
+  const",
+    },
+    "line": 31,
+    "message": "Extra semicolon.",
+    "messageId": "extraSemi",
+    "nodeType": "VariableDeclaration",
+    "ruleId": "@typescript-eslint/semi",
+    "severity": 2,
+  },
+  {
+    "column": 4,
+    "endColumn": 5,
+    "endLine": 35,
+    "fix": {
+      "range": [
+        640,
+        697,
+      ],
+      "text": "}
+
+  /* eslint-disable react/button-has-type */
+  return",
+    },
+    "line": 35,
+    "message": "Extra semicolon.",
+    "messageId": "extraSemi",
+    "nodeType": "VariableDeclaration",
+    "ruleId": "@typescript-eslint/semi",
+    "severity": 2,
+  },
+  {
+    "column": 7,
+    "endColumn": 21,
+    "endLine": 42,
+    "line": 42,
+    "message": "Prop spreading is forbidden",
+    "messageId": "noSpreading",
+    "nodeType": "JSXSpreadAttribute",
+    "ruleId": "react/jsx-props-no-spreading",
+    "severity": 1,
+  },
+  {
+    "column": 4,
+    "endColumn": 5,
+    "endLine": 48,
+    "fix": {
+      "range": [
+        859,
+        863,
+      ],
+      "text": ")
+}",
+    },
+    "line": 48,
+    "message": "Extra semicolon.",
+    "messageId": "extraSemi",
+    "nodeType": "ReturnStatement",
+    "ruleId": "@typescript-eslint/semi",
+    "severity": 2,
+  },
+]
+`;

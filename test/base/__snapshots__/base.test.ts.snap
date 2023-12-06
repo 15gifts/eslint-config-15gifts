@@ -1,0 +1,259 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Base config That the base 'invalid' file throws lint errors 1`] = `
+[
+  {
+    "column": 15,
+    "endColumn": 16,
+    "endLine": 5,
+    "fix": {
+      "range": [
+        117,
+        134,
+      ],
+      "text": "defaults
+  const",
+    },
+    "line": 5,
+    "message": "Extra semicolon.",
+    "messageId": "extraSemi",
+    "nodeType": "VariableDeclaration",
+    "ruleId": "@typescript-eslint/semi",
+    "severity": 2,
+  },
+  {
+    "column": 45,
+    "endColumn": 46,
+    "endLine": 6,
+    "fix": {
+      "range": [
+        170,
+        180,
+      ],
+      "text": "]
+  const",
+    },
+    "line": 6,
+    "message": "Extra semicolon.",
+    "messageId": "extraSemi",
+    "nodeType": "VariableDeclaration",
+    "ruleId": "@typescript-eslint/semi",
+    "severity": 2,
+  },
+  {
+    "column": 60,
+    "endColumn": 61,
+    "endLine": 7,
+    "fix": {
+      "range": [
+        231,
+        243,
+      ],
+      "text": "]
+
+  return",
+    },
+    "line": 7,
+    "message": "Extra semicolon.",
+    "messageId": "extraSemi",
+    "nodeType": "VariableDeclaration",
+    "ruleId": "@typescript-eslint/semi",
+    "severity": 2,
+  },
+  {
+    "column": 5,
+    "endColumn": 9,
+    "endLine": 11,
+    "fix": {
+      "range": [
+        250,
+        342,
+      ],
+      "text": "hair: \`\${hairLength} and \${hairColor}\`,
+    hobbies: [...favouriteSports, ...favouriteMusic]",
+    },
+    "line": 11,
+    "message": "Expected object keys to be in natural ascending order. 'hair' should be before 'hobbies'.",
+    "nodeType": "Property",
+    "ruleId": "sort-keys-fix/sort-keys-fix",
+    "severity": 2,
+  },
+  {
+    "column": 5,
+    "endColumn": 8,
+    "endLine": 12,
+    "fix": {
+      "range": [
+        304,
+        366,
+      ],
+      "text": "age: parseInt(age),
+    hair: \`\${hairLength} and \${hairColor}\`",
+    },
+    "line": 12,
+    "message": "Expected object keys to be in natural ascending order. 'age' should be before 'hair'.",
+    "nodeType": "Property",
+    "ruleId": "sort-keys-fix/sort-keys-fix",
+    "severity": 2,
+  },
+  {
+    "column": 10,
+    "endColumn": 23,
+    "endLine": 12,
+    "line": 12,
+    "message": "Missing radix parameter.",
+    "messageId": "missingRadix",
+    "nodeType": "CallExpression",
+    "ruleId": "radix",
+    "severity": 2,
+    "suggestions": [
+      {
+        "desc": "Add radix parameter \`10\` for parsing decimal numbers.",
+        "fix": {
+          "range": [
+            365,
+            365,
+          ],
+          "text": ", 10",
+        },
+        "messageId": "addRadixParameter10",
+      },
+    ],
+  },
+  {
+    "column": 4,
+    "endColumn": 5,
+    "endLine": 14,
+    "fix": {
+      "range": [
+        380,
+        384,
+      ],
+      "text": "}
+}",
+    },
+    "line": 14,
+    "message": "Extra semicolon.",
+    "messageId": "extraSemi",
+    "nodeType": "ReturnStatement",
+    "ruleId": "@typescript-eslint/semi",
+    "severity": 2,
+  },
+  {
+    "column": 2,
+    "endColumn": 3,
+    "endLine": 15,
+    "fix": {
+      "range": [
+        383,
+        392,
+      ],
+      "text": "}
+
+const",
+    },
+    "line": 15,
+    "message": "Extra semicolon.",
+    "messageId": "extraSemi",
+    "nodeType": "VariableDeclaration",
+    "ruleId": "@typescript-eslint/semi",
+    "severity": 2,
+  },
+  {
+    "column": 5,
+    "endColumn": 10,
+    "endLine": 19,
+    "fix": {
+      "range": [
+        432,
+        467,
+      ],
+      "text": "color: "blonde",
+    length: "long"",
+    },
+    "line": 19,
+    "message": "Expected object keys to be in natural ascending order. 'color' should be before 'length'.",
+    "nodeType": "Property",
+    "ruleId": "sort-keys-fix/sort-keys-fix",
+    "severity": 2,
+  },
+  {
+    "column": 20,
+    "endColumn": 21,
+    "endLine": 19,
+    "fix": {
+      "range": [
+        459,
+        470,
+      ],
+      "text": ""blonde" }",
+    },
+    "line": 19,
+    "message": "Unexpected trailing comma.",
+    "messageId": "unexpected",
+    "nodeType": "Property",
+    "ruleId": "comma-dangle",
+    "severity": 2,
+  },
+  {
+    "column": 3,
+    "endColumn": 6,
+    "endLine": 20,
+    "fix": {
+      "range": [
+        424,
+        499,
+      ],
+      "text": "// prettier-ignore
+age: 4, 
+  hair: { length: "long",
+    color: "blonde", }",
+    },
+    "line": 20,
+    "message": "Expected object keys to be in natural ascending order. 'age' should be before 'hair'.",
+    "nodeType": "Property",
+    "ruleId": "sort-keys-fix/sort-keys-fix",
+    "severity": 2,
+  },
+  {
+    "column": 3,
+    "endColumn": 4,
+    "endLine": 21,
+    "fix": {
+      "range": [
+        502,
+        512,
+      ],
+      "text": ")
+
+export",
+    },
+    "line": 21,
+    "message": "Extra semicolon.",
+    "messageId": "extraSemi",
+    "nodeType": "VariableDeclaration",
+    "ruleId": "@typescript-eslint/semi",
+    "severity": 2,
+  },
+  {
+    "column": 23,
+    "endColumn": 24,
+    "endLine": 23,
+    "fix": {
+      "range": [
+        527,
+        529,
+      ],
+      "text": "]",
+    },
+    "line": 23,
+    "message": "Extra semicolon.",
+    "messageId": "extraSemi",
+    "nodeType": "ExportDefaultDeclaration",
+    "ruleId": "@typescript-eslint/semi",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`Base config That the base 'valid' file passes 1`] = `[]`;
