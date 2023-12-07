@@ -1,22 +1,13 @@
-import React, { type ReactNode } from 'react'
-
-interface ButtonProps {
-  children: ReactNode;
-  type?: 'submit' | 'button' | 'reset';
-  onClick?: () => void;
-  href?: string;
-  variant?: 'primary' | 'secondary';
-  loading?: boolean;
-}
+import React from 'react'
 
 export default function Button({
   children,
   href,
   loading = false,
   onClick,
-  type = 'button',
-  variant = 'primary',
-}: ButtonProps) {
+  type ='"button',
+  variant ='"primary',
+}) {
   let linkProps = {}
   if (href) {
     linkProps = {

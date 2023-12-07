@@ -1,13 +1,4 @@
-import React, { useCallback, type ReactNode, useState } from "react";
-
-interface ButtonProps {
-  children: ReactNode;
-  type?: "submit" | "button" | "reset";
-  loading?: boolean;
-  onClick?: () => void;
-  href?: string;
-  variant?: "primary" | "secondary";
-}
+import React, { useCallback, useState } from "react";
 
 export default function Button({
   children,
@@ -17,7 +8,7 @@ export default function Button({
   onClick,
   variant = "primary",
   ...rest
-}: ButtonProps) {
+}) {
   const linkProps = {};
   if (href) {
     linkProps = {

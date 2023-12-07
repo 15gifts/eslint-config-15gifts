@@ -21,8 +21,6 @@ module.exports = {
     "no-shadow": "off", // replaced by @typescript-eslint/no-shadow
     "@typescript-eslint/no-shadow": ["error"],
     "node/no-deprecated-api": "warn",
-    semi: "off",
-    "@typescript-eslint/semi": ["error", "never"],
     "sort-destructure-keys/sort-destructure-keys": "error",
     "sort-keys-fix/sort-keys-fix": ["error", "asc", { natural: true }],
     "import/extensions": [
@@ -37,5 +35,10 @@ module.exports = {
       },
     ],
     "dot-notation": "off",
+
+    // Stylistic rules, these will be disabled if the project extends eslint-config-prettier
+    semi: "off",
+    "@typescript-eslint/semi": ["error", "never"],
+    quotes: ["error", "single"],
   },
 };

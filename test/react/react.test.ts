@@ -2,7 +2,7 @@ import { getResultJson } from "../helpers";
 
 describe("React config", () => {
   test("That the React 'valid' file passes", async () => {
-    const [result] = await getResultJson(["test/react/valid.tsx"]);
+    const [result] = await getResultJson(["test/react/valid.jsx"]);
 
     expect(result.messages).toMatchSnapshot();
     expect(result.errorCount).toBe(0);
@@ -10,10 +10,10 @@ describe("React config", () => {
   });
 
   test("That the react 'invalid' file throws lint errors", async () => {
-    const [result] = await getResultJson(["test/react/invalid.tsx"]);
+    const [result] = await getResultJson(["test/react/invalid.jsx"]);
 
     expect(result.messages).toMatchSnapshot();
-    expect(result.errorCount).toBe(25);
+    expect(result.errorCount).toBe(33);
     expect(result.warningCount).toBe(2);
   });
 });

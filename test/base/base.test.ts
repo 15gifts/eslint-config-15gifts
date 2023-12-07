@@ -13,7 +13,7 @@ describe("Base config", () => {
     const [result] = await getResultJson(["test/base/invalid.js"]);
 
     expect(result.messages).toMatchSnapshot();
-    expect(result.errorCount).toBe(13);
+    expect(result.errorCount).toBe(21);
     expect(result.warningCount).toBe(0);
   });
 });
