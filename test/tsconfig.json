@@ -1,4 +1,10 @@
 {
-  "include": ["**/.eslintrc.js", "**/*.js", "**/*.tsx"],
+  "include": [
+    "**/.eslintrc.js",
+    "**/*.js",
+    "**/*.tsx",
+    "react/invalid.jsx",
+    "react/valid.jsx"
+  ],
   "exclude": ["node_modules"]
 }

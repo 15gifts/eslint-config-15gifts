@@ -1,0 +1,5 @@
+
+# If you've got the prettier VSCode extension installed, it will format the test files, which breaks the tests.
+# This turns that off
+/test/*
+
