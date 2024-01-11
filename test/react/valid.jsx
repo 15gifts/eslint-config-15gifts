@@ -5,8 +5,8 @@ export default function Button({
   href,
   loading = false,
   onClick,
-  type ='"button',
-  variant ='"primary',
+  type ='button',
+  variant ='primary',
 }) {
   let linkProps = {}
   if (href) {
